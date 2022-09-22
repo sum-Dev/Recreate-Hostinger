@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostinger</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- ---------------- NAVBAR SECTION ------------------ -->
+    <header class="shadow">
+        <nav id="navbar">
+            <div class="left all-flex gap-20">
+                <div class="logo">HOSTINGER</div>
+                <div class="lang sm">Eng</div>
+            </div>
+            <div class="right all-flex gap-20">
+                <div class="menu-wrap all-flex">
+                    <button class="btn closeBtn" id="closeBtn">&#10006;</button>
+                    <ul class="all-flex menu">
+                        <li><span class="navLi_item">Hosting</span>
+                            <div class="navItem-cont">
+                                <ul>
+                                    <li class="item">Web Hosting</li>
+                                    <li class="item">Cloud Hosting</li>
+                                    <li class="item">WordPress Hosting</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><span class="navLi_item">VPS</span>
+                            <div class="navItem-cont">
+                                <ul>
+                                    <li class="item">VPS Hosting</li>
+                                    <li class="item">CyberPanel Hosting</li>
+                                    <li class="item">MineCraft Server Hosting</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><span class="navLi_item">Email</span>
+                            <div class="navItem-cont">
+                                <ul>
+                                    <li class="item">Google WorkSpace Email Hosting</li>
+                                    <li class="item">Hostinger Email Hosting</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><span class="navLi_item">Domain</span>
+                            <div class="navItem-cont">
+                                <ul>
+                                    <li class="item">Domain Name Search</li>
+                                    <li class="item">WHOIS Lookup</li>
+                                    <li class="item">Domain Transfer</li>
+                                </ul>
+                            </div>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="login sm">Log In</div>
+                <div class="cart sm"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></div>
+                <div class="hamburger sm" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+        <div class="container mx-auto">
+
+            <!-- ---------------- HERO SECTION ------------------ -->
+
+            <section class="hero shadow mx-auto all-flex main-pad">
+                <div class="hero-content all-flex flex-col">
+                    <h3>Savings to Set Your Website in Motion</h3>
+                    <div class="price-wrap all-flex"><span>₹</span><h1 class="price">149.00</h1><span><sub>/mo</sub></span></div>
+                    <p class="intro">Get things moving with a Free Domain, Lifetime SSL, and DDoS protection included with a Four year Subscription</p>
+                    <div class="timer all-flex gap-10">
+                        <div class="time-box day">
+                            <!-- <span class="min-zero">0</span><span class="time">1</span> -->
+                            <span id="days"></span>
+                            <span class="det">days</span>
+                        </div>
+                        <div class="time-box hour">
+                            <!-- <span class="min-zero">0</span><span class="time">0</span> -->
+                            <span id="hours"></span>
+                            <span class="det">hours</span>
+                        </div>
+                        <div class="time-box minute">
+                            <!-- <span class="min-zero">1</span><span class="time">8</span> -->
+                            <span id="minutes"></span>
+                            <span class="det">minutes</span>
+                        </div>
+                        <div class="time-box second">
+                            <!-- <span class="min-zero">0</span><span class="time">7</span> -->
+                            <span id="seconds"></span>
+                            <span class="det">seconds</span>
+                        </div>
+                    </div>
+                    <button class="btn my-10">Get Started</button>
+                    <p class="exc"><i class="fa-sharp fa-solid fa-check"></i>Get exclusive 30-day money-back guarantee</p>
+                </div>
+            </section>
+
+            <!-- ---------------- FT.COMP SECTION ------------------ -->
+
+            <section class="ft_Comp mx-auto ">
+                <div class="img-wrap all-flex gap-20 inset-shadow mx-auto">
+                    <div class="img-box">
+                        <img src="./Img/Wordpress_logo.png" alt="Wordpress">
+                    </div>
+                    <div class="img-box">
+                        <img src="./Img/LiteSpeed_logo.png" alt="LiteSpeed_logo">
+                    </div>
+                    <div class="img-box">
+                        <img src="./Img/Cloudflare_logo.png" alt="CloudFlare">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ---------------- PLAN SECTION ------------------ -->
+
+            <section class="plan shadow mx-auto all-flex flex-col main-pad">
+                <div class="plan-content all-flex flex-col">
+                    <h3>All-In-One Web Hosting</h3>
+                    <p>We prepared the best web hosting plan for you to start. You will be able to adjust plans as you go - our custom-built algorithm will provide suggestions based on your usage</p>
+                </div>
+                <div class="plan-card all-flex gap-20">
+                    <div class="card-wrap all-flex flex-col">
+                        <div class="card shadow all-flex flex-col">
+                            <div class="price-wrap all-flex"><span>₹</span><h1 class="price">69.00</h1><span>/mo</span></div>
+                            <button class="btn">Select</button>
+                            <div class="btn circle-btn ben-btn all-flex">><span class="ben"><span class="toggle">View</span> Benefits</span></div>
+                        </div>
+                        <div class="benefits shadow">
+                            <ul>
+                                <li class="benefit my-25"><i class="fa-sharp fa-solid fa-check"></i><b>Unmetered</b> traffic (Unlimited GB)</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>100</b> Websites</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>100 GB</b> SSD</li>
+                                <li class="benefit"><span class="cross">&#10006;</span><b>Free</b> Weekly Backups</li>
+                                <li class="benefit"><span class="cross">&#10006;</span></i><b>Unlimited</b> Free SSL</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>Free</b> Domain</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>Free</b> Email</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>50</b> email aliases</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>Optimized</b> for WordPress</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-wrap">
+                        <div class="card shadow all-flex flex-col">
+                            <div class="price-wrap all-flex"><span>₹</span><h1 class="price">149.00</h1><span>/mo</span></div>
+                            <button class="btn">Select</button>
+                            <div class="btn circle-btn ben-btn all-flex">> <span class="ben"><span class="toggle">View</span> Benefits</span></div>
+                        </div>
+                        <div class="benefits shadow">
+                            <ul>
+                                <li class="benefit my-25"><i class="fa-sharp fa-solid fa-check"></i><b>Unmetered</b> traffic (Unlimited GB)</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>100</b> Websites</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>100 GB</b> SSD</li>
+                                <li class="benefit"><span class="cross">&#10006;</span></i><b>Free</b> Weekly Backups</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>Unlimited</b> Free SSL</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>Free</b> Domain</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>Free</b> Email</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>100</b> email aliases</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>Optimized</b> for WordPress</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-wrap">
+                        <div class="card shadow all-flex flex-col">
+                            <div class="price-wrap all-flex"><span>₹</span><h1 class="price">289.00</h1><span>/mo</span></div>
+                            <button class="btn">Select</button>
+                            <div class="btn circle-btn ben-btn all-flex">> <span class="ben"><span class="toggle">View</span> Benefits</span></div>
+                        </div>
+                        <div class="benefits shadow">
+                            <ul>
+                                <li class="benefit my-25"><i class="fa-sharp fa-solid fa-check"></i><b>Unmetered</b> traffic (Unlimited GB)</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>100</b> Websites</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>100 GB</b> SSD</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>Free</b> Weekly Backups</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>Unlimited</b> Free SSL</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>Free</b> Domain</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>Free</b> Email</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>200</b> email aliases</li>
+                                <li class="benefit"><i class="fa-sharp fa-solid fa-check"></i><b>Optimized</b> for WordPress</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ---------------- SERVICE SECTION ------------------ -->
+
+            <section class="service shadow mx-auto main-pad all-flex flex-col gap-20">
+                <h3>Our services include:</h3>
+                <div class="service-wrap gap-10">
+                    <div class="col">
+                        <div class="serv-box all-flex"><span class="icon"><img src="./Img/free-ssl.svg" alt="ssl"></span> Free SSL</div>
+                        <div class="serv-box all-flex"><span class="icon"><img src="./Img/free-migration.svg" alt="free-migration"></span> Free Migration</div>
+                        <div class="serv-box all-flex"><span class="icon"><img src="./Img/php-speed-boost.svg" alt="php"></span> PHP Speed Boost</div>
+                        <div class="serv-box all-flex"><span class="icon"><img src="./Img/tech-support.svg" alt="support"></span> 24/7/365 Tech Support</div>
+                    </div>
+                    <div class="col">
+                        <div class="serv-box all-flex"><span class="icon"><img src="./Img/access-management.svg" alt="access"></span> Access Management</div>
+                        <div class="serv-box all-flex"><span class="icon"><img src="./Img/backups.svg" alt="backups"></span> Automated backups</div>
+                        <div class="serv-box all-flex"><span class="icon"><img src="./Img/wp-icon.svg" alt="wp"></span> LiteSpeed Cache Plugin</div>
+                        <div class="serv-box all-flex"><span class="icon"><img src="./Img/script-installer.svg" alt="script-installer"></span> Auto Script Installer</div>
+                    </div>
+                    <div class="col">
+                        <div class="serv-box all-flex"><span class="icon"><img src="./Img/ecommerce-opt.svg" alt="eCommerce"></span> eCommerce Optimization</div>
+                        <div class="serv-box all-flex"><span class="icon"><img src="./Img/cloudflare-icon.svg" alt="cloudflare"></span> DDoS Protection</div>
+                        <div class="serv-box all-flex"><span class="icon"><img src="./Img/wp-installation.svg" alt="wp"></span> One-Click WordPress Installation</div>
+                        <div class="serv-box all-flex"><span class="icon"><img src="./Img/uptime-guarantee.svg" alt="guarantee"></span> 99.9% Uptime Guarantee</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ---------------- FIND DOMAIN SECTION ------------------ -->
+
+            <section class="find-domain inset-shadow mx-auto main-pad all-flex flex-col gap-20">
+                <div class="find-domain_Content all-flex flex-col gap-10">
+                    <h3>Find the Perfect Domain</h3>
+                    <p>Enter domain name of your choice and pick any extension name on the next stop (choose between .in, .com, .online, .live, .store, .info and many more :)</p>
+                    <div class="domain_inputs">
+                        <input type="text" name="text" placeholder="e.g. dream.com" class="find-domain_Input inset-shadow">
+                        <button class="btn">Search</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ---------------- FEATURE SECTION ------------------ -->
+
+            <section class="feature shadow mx-auto main-pad all-flex flex-col gap-20">
+                <div class="feature-wrap all-flex flex-col gap-20">
+                    <div class="feat-box all-flex gap-50">
+                        <div class="left">
+                            <h5>Easy to use and simple</h5>
+                            <h2>Easy to set up</h2>
+                            <p>Getting your website live is as simple as a click of a button, Everything you need - provided in a clear way</p>
+                            <button class="btn">Know More</button>
+                        </div>
+                        <div class="right">
+                            <div class="img-box">
+                                <img src="./Img/easy-to-setup.webp" alt="Easy-to-setup">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feat-box col-rev all-flex gap-50 myEx-20">
+                        <div class="left">
+                            <div class="img-box">
+                                <img src="./Img/simply-fast-websites.jpg" alt="Lightning-fast">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h5>Perfomance and Speed</h5>
+                            <h2>Lightning-fast websites</h2>
+                            <p>Website speed can slow or grow your business. Delight your visitors with a fast-loading and a optimized website</p>
+                            <button class="btn">Know More</button>
+                        </div>
+                    </div>
+                    <div class="feat-box all-flex gap-50 myEx-20">
+                        <div class="left">
+                            <h5>Get WordPress Experience</h5>
+                            <h2>WordPress made easy</h2>
+                            <p>Start your website with an automatic 1-click WordPress Installation. The Backend is powered by LiteSpeed caching and advanced optimization to ensure your websites are fast, reliable and secure.</p>
+                            <button class="btn">Know More</button>
+                        </div>
+                        <div class="right">
+                            <div class="img-box">
+                                <img src="./Img/wordpress-made-easy.jpg" alt="wordpress-made-easy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feat-box col-rev all-flex gap-50 myEx-20">
+                        <div class="left">
+                            <div class="img-box">
+                                <img src="./Img/chat-support@2x.png" alt="chat-support">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <h5>Professionals and Hands-On</h5>
+                            <h2>24/7 Support</h2>
+                            <p>Our team of experts will solve technical issues to get your websites up and running. Anytime.</p>
+                            <button class="btn">Contact Us</button></div>
+                    </div>
+                    <div class="feat-box all-flex gap-50 myEx-20">
+                        <div class="left">
+                            <h5>Flexible and Scaleable</h5>
+                            <h2>From micro to large-scale</h2>
+                            <p>Different projects require different technologies. Pick a plan that matches your current needs, then upgrade and scale as your websites grows.</p>
+                            <button class="btn">See all products</button>
+                        </div>
+                        <div class="right">
+                            <div class="img-box">
+                                <img src="./Img/micro-large-scale.webp" alt="micro-large-scale">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feat-box all-flex flex-col gap-10 myEx-20">
+                        <h2>User-Friendly Control Panel</h2>
+                        <div class="wrap col-rev all-flex gap-50">
+                            <div class="left">
+                                <div class="img-box">
+                                    <img src="./Img/panel-img.png" alt="control-panel">
+                                </div>
+                            </div>
+                            <div class="right">
+                                <span class="icon my-10"><img src="./Img/user-icon.svg" alt="user-icon"></sp>
+                                <h3>Ease of Use</h3> 
+                                <p class="exp my-25">Hostinger Panel is extremely User-Friendly and can be used by those with little experience in website development</p>
+                                <span class="icon"><img src="./Img/chart-icon.svg" alt="chart-icon"></span>
+                                <h3>Powerful</h3> 
+                                <p class="exp">A wide variety of tools to satisfy advanced user and website development needs.</p>
+                                <span class="icon"><img src="./Img/wp-icon.svg" alt=""></span>
+                                <h3>WordPress Optimized</h3> 
+                                <p class="exp">Get more speed, better SEO, visitor retention and conversios with our custom-built WP optimization stack and LiteSpeed cache</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ---------------- MONEY-BACK SECTION ------------------ -->
+
+            <section class="money-back shadow mx-auto main-pad all-flex">
+                <div class="money-back-wrap all-flex flex-col gap-10">
+                    <h2>30-Day Money-Back Guarantee</h2>
+                    <p>We'll refund payment if you are not 100% satisfied with Hostinger. No hassle, no risk.</p>
+                    <button class="btn">Get Started</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ---------------- FOOTER SECTION ------------------ -->
+
+    <footer class="shadow main-pad all-flex">
+        <div class="footer-wrap gap-50">
+            <div class="footBox_one">
+                <div class="col more">
+                    <div class="logo"><h3>HOSTINGER</h3></div>
+                    <p class="about">We are a Web Hosting company with a mission to help everyone who gets online succeed. We accomplish this by continuously developing server technology, giving expert assistance, and ensuring a flowless online website hosting experience</p>
+                    <div class="payment-method"></div>
+                </div>
+            </div>
+            <div class="footBox_two all-flex gap-20">
+                <div class="col">
+                    <h3>HOSTING</h3>
+                    <ul>
+                        <li><a href="#">Web Hosting</a></li>
+                        <li><a href="#">VPS Hosting</a></li>
+                        <li><a href="#">MineCraft Server Hosting</a></li>
+                        <li><a href="#">CyberPanel Hosting</a></li>
+                        <li><a href="#">Cloud Hosting</a></li>
+                        <li><a href="#">WordPress Hosting</a></li>
+                        <li><a href="#">Email Hosting</a></li>
+                        <li><a href="#">CMS Hosting</a></li>
+                        <li><a href="#">Ecommerce Hosting</a></li>
+                        <li><a href="#">Free Web Hosting</a></li>
+                        <li><a href="#">Online Store</a></li>
+                        <li><a href="#">Website Builder</a></li>
+                        <li><a href="#">Buy Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>DOMAIN</h3>
+                    <ul>
+                        <li><a href="#">Domain Name Search</a></li>
+                        <li><a href="#">Domain Transfer</a></li>
+                        <li><a href="#">Free Domain Name </a></li>
+                        <li><a href="#">XYZ Domain</a></li>
+                        <li><a href="#">Cheap Domains</a></li>
+                        <li><a href="#">Domain Extensions</a></li>
+                        <li><a href="#">WHOIS Lookup</a></li>
+                        <li><a href="#">Free SSL Certificate</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">Migrate to Hostinger</a></li>
+                        <li><a href="#">System Status</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">Rewards</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <h3 class="my-10">LEGAL</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="#">About Hostinger</a></li>
+                        <li><a href="#">Our Technology</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                        <li><a href="#">Customer Care</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                    <h3 class="my-10">HELP</h3>
+                    <ul>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Knowledge</a></li>
+                        <li><a href="#">Report Online Abuse</a></li>
+                    </ul>
+                    <ul class="all-flex my-25 socialIcon-wrap">
+                        <li><a href="#"><img src="./Img/linkedIn.svg" alt="linkedIn" class="social-icon"></a></li>
+                        <li><a href="#"><img src="./Img/facebook.svg" alt="facebook" class="social-icon"></a></li>
+                        <li><a href="#"><img src="./Img/instagram.svg" alt="instagram" class="social-icon"></a></li>
+                        <li><a href="#"><img src="./Img/twitter.svg" alt="twitter" class="social-icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
