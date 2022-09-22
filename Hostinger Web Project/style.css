@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url(./utility.css);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 html{
@@ -221,7 +222,7 @@ p{
     background-color: #f1f1f1;
     border-radius: 12px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .plan .plan-card .card-wrap .benefits{
@@ -230,12 +231,14 @@ p{
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease;
-    translate: 0 -4px;
+    translate: 0 -11px;
 }
 
 .plan .plan-card .show .benefits{
     max-height: fit-content;
     transition: all 0.3s ease;
+    padding-bottom: 7px;
+    border-radius: 10px;
 }
 
 .plan .plan-card .card-wrap .benefits ul li{
@@ -332,6 +335,7 @@ p{
 .domain_inputs .btn{
     position: absolute;
     right: -10%;
+    bottom: 0;
 }
 
 /* <!-- ---------------- FEATURE SECTION ------------------ --> */
@@ -402,7 +406,6 @@ footer{
     width: 100vw;
     font-weight: 500;
     background-color: #f2f5ff;
-    /* color: white; */
 }
 
 footer .footer-wrap{
@@ -413,8 +416,6 @@ footer .footer-wrap{
 
 footer .footer-wrap div{
     width: calc(100% / 5);
-    /* padding: 8px 12px; */
-    /* background-color: #f8f8f8; */
 }
 
 .logo{
@@ -423,7 +424,7 @@ footer .footer-wrap div{
 
 footer .footer-wrap div p{
     font-size: 11px;
-    color: #60518f;
+    color: #59507c;
 }
 
 footer .footer-wrap h3{
@@ -448,6 +449,10 @@ footer .footer-wrap .footBox_one{
 footer .footer-wrap .footBox_two{
     width: 75%;
     align-items: flex-start;
+}
+footer .footer-wrap div ul li a {
+    font-size: 10px;
+    color: #59507c;
 }
 
 footer .footer-wrap .more{
@@ -488,7 +493,7 @@ footer .footer-wrap .socialIcon-wrap .social-icon:hover{
         justify-content: flex-start;
         padding-top: 50px;
         transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-        z-index: 1;
+        z-index: 5;
     }
     header nav .right ul{
         flex-direction: column;
@@ -618,7 +623,7 @@ footer .footer-wrap .socialIcon-wrap .social-icon:hover{
         font-size: 17px;
     }
     p{
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .domain_inputs .find-domain_Input{
@@ -678,9 +683,6 @@ footer .footer-wrap .socialIcon-wrap .social-icon:hover{
         font-size: 10px;
     }
     footer .footer-wrap div p{
-        font-size: 8px;
-    }
-    footer .footer-wrap div ul li a{
         font-size: 9px;
     }
 }
@@ -705,10 +707,10 @@ footer .footer-wrap .socialIcon-wrap .social-icon:hover{
         padding: 10px 22px;
     }
     .price-wrap h1{
-        font-size: 24px;
+        font-size: 30px;
     }
     .plan .plan-card .card-wrap .card{
-        height: 125px;
+        height: 130px;
     }
     .plan .plan-content{
         width: 88%;
@@ -766,6 +768,9 @@ footer .footer-wrap .socialIcon-wrap .social-icon:hover{
     footer .footer-wrap .footBox_two{
         justify-content: space-between;
     }
+    footer .footer-wrap div ul li a{
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 470px){
@@ -785,11 +790,15 @@ footer .footer-wrap .socialIcon-wrap .social-icon:hover{
         gap: 30px;
     }
     .plan .plan-card .card-wrap{
-        width: 63%;
+        width: 70%;
         margin: 0 auto;
     }
     .plan .plan-card .card-wrap .card{
         width: 100%;
+    }
+    .plan .plan-card .card-wrap .benefits ul li {
+        padding: 4px 11px;
+        font-size: 12px;
     }
 
     .service .service-wrap{
@@ -805,12 +814,13 @@ footer .footer-wrap .socialIcon-wrap .social-icon:hover{
     }
     
     .domain_inputs .find-domain_Input{
-        width: 72vw;
+        width: 75vw;
     }
 
     .feature .feature-wrap .feat-box p {
         font-size: 12px;
     }
+
 }
 
 @media (max-width: 413px){
@@ -818,10 +828,30 @@ footer .footer-wrap .socialIcon-wrap .social-icon:hover{
         font-size: 20px;
     }
 
+    .domain_inputs .btn {
+        padding: 10px 18px;
+    }
+
     footer .footer-wrap .footBox_two{
         flex-direction: column;
     }
     footer .footer-wrap .col{
         width: 100%;
+    }
+    footer .footer-wrap h3 {
+        font-size: 16px;
+    }
+    footer .footer-wrap div ul li{
+        margin-top: 6px;
+    }
+    footer .footer-wrap div p {
+        font-size: 13px;
+    }
+    footer .footer-wrap div ul li a{
+        font-size: 13px;
+    }
+    footer .footer-wrap .socialIcon-wrap .social-icon {
+        width: 30px;
+        margin: 0 12px 0 0;
     }
 }
